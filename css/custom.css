@@ -1,0 +1,54 @@
+html body {
+  background: url('../img/bg-home-espectacle-vineyards.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+header {
+}
+
+article {
+}
+
+section {
+
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+figure {
+}
+
+.brand {
+}
+
+.logo {
+}
+
+.company-name {
+  /*font-size: 1.75em;*/
+}
+
+.portfolio {
+}
+
+.article-title {
+  font-family: Garamond;
+  font-weight: bold;
+}
+
+.bg-white {
+    background-color: hsla(0, 0%, 99%, .65);
+}
+
+.bg-black {
+    background-color: hsla(0, 0%, 13%, .65);
+}
+
+.text-white {
+  color: hsla(0, 0%, 99%, 1);
+}
