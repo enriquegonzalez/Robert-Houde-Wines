@@ -117,12 +117,12 @@ small {
     background-color: hsla(0, 0%, 13%, 1);
   }
 
-  .bg-light-black {
-    background-color: hsla(0, 0%, 13%, 1);
+  .bg-white{
+    background-color: hsla(0, 0%, 99%, 1);
   }
 
-  .bg-white {
-    background-color: hsla(0, 0%, 99%, 1);
+  .small-text-black {
+  color: hsla(0, 0%, 13%, 1);
   }
 
 
