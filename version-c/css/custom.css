@@ -108,9 +108,10 @@ small {
   }
 
   /* MODULES */
-  .about-us-copy {
+  .about-us-copy, .portfolio-copy {
     font-size: 1em;
   }
+
 
   /* COLORS */
   .bg-black {
