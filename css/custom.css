@@ -19,6 +19,7 @@ section {
 
 h1, h2 {
   text-transform: uppercase;
+  font-family:Garamond, Georgia, serif;
 }
 
 small {
@@ -33,7 +34,7 @@ small {
 }
 
 .company-name {
-  font-size: 1.4em;
+  font-size: 1.6em;
   text-align: center;
   text-transform: capitalize;
 }
