@@ -48,7 +48,7 @@ small {
 
 .company-name {
   font-family:Garamond, Georgia, serif;
-  font-size: 1.2em;
+  font-size: 1.5em;
   letter-spacing: .015em;
   text-align: center;
   text-transform: capitalize;
@@ -113,6 +113,10 @@ small {
     font-size: 1em;
   }
 
+  .company-name {
+    font-size: 1.55em;
+  }
+
 
   /* COLORS */
   .bg-black {
@@ -155,7 +159,7 @@ small {
   }
 
   .company-name {
-    font-size: 2em;
+    font-size: 3.25em;
   }
 
   /* COLORS */
