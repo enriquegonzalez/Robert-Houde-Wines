@@ -51,6 +51,7 @@ small {
   font-size: 1.2em;
   letter-spacing: .015em;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .portfolio-copy {
