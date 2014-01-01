@@ -1,4 +1,3 @@
-/* BASE */
 html body {
   background: url('../img/bg-home-espectacle-vineyards.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -7,30 +6,79 @@ html body {
           background-size: cover;
 }
 
+header {
+}
+
 header, article, footer {
   padding: 5%;
 }
 
-h1, h2 {
-  font-family:Garamond, Georgia, serif;
-  font-weight: bold;
-  letter-spacing: 0.065em;
-  text-transform: uppercase;
+section {
+
 }
 
-button {
-  margin-top: 5%;
+h1, h2 {
+  text-transform: uppercase;
+  font-family:Garamond, Georgia, serif;
 }
 
 small {
   font-size: .9em;
 }
 
-/* LAYOUT */
+.brand {
+}
+
+.logo {
+  width: 100%;
+}
+
+.company-name {
+  font-size: 1.6em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.portfolio {
+  font-size: 1.25em;
+  font-weight: 100;
+  letter-spacing: .035em;
+  line-height: 1.5;
+}
+
 .about-us {
   -moz-columns:3;
   -webkit-columns:3;
   columns:3;
+}
+
+.about-us-copy {
+  font-size: 1.25em;
+  font-weight: 200;
+  letter-spacing: .035em;
+  line-height: 1.5;
+}
+
+.article-title {
+  font-family:Garamond, Georgia, serif;
+  font-weight: bold;
+  letter-spacing: .065em;
+}
+
+.bg-white {
+    background-color: hsla(0, 0%, 99%, .85);
+}
+
+.bg-light-black {
+    background-color: hsla(0, 0%, 13%, .25);
+}
+
+.bg-black {
+    background-color: hsla(0, 0%, 13%, .85);
+}
+
+.text-white {
+  color: hsla(0, 0%, 99%, 1);
 }
 
 .space-top-15 {
@@ -41,114 +89,43 @@ small {
   margin-top: 10%;
 }
 
-.space-top-5 {
-  margin-top: 5%;
-}
-
-
-/* MODULES */
-.about-us-copy, .portfolio-copy {
-  font-size: 1.25em;
-  font-weight: 200;
-  letter-spacing: .035em;
-  line-height: 1.5;
-}
-
-.company-name {
-  font-family:Garamond, Georgia, serif;
-  font-size: 2.15em;
-  font-weight: normal;
-  letter-spacing: .015em;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-/* COLORS */
-.bg-white {
-    background-color: hsla(0, 0%, 99%, .85);
-}
-
-.bg-black {
-    background-color: hsla(0, 0%, 13%, .65);
-}
-
-.text-light-grey {
-  color: hsla(0, 0%, 80%, 1);
-}
-
-.text-white {
-  color: hsla(0, 0%, 99%, 1);
-}
-
-/************************************/
-/* Foundation Specificity Overrides */
-/* Columns */
-/*main > div:nth-of-type(1) .columns {
-  padding-bottom: 0.9375em;
-  padding-top: 0.9375em;
-}*/
-
 
 /*// Small screens //*/
 @media only screen { } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) {
-  /*BASE*/
-  small {
-    font-size: 1em;
+    small {
+      font-size: .75em;
   }
-
-  /* LAYOUT */
-  .about-us {
+    .about-us {
     -moz-columns:1;
     -webkit-columns:1;
     columns:1;
   }
 
-   .small-space-top-10 {
-    margin-top: 10%;
-  }
-  .space-top-15, .space-top-10, .space-top-5 {
-    margin-top: 0;
-  }
-
-
-  /* MODULES */
-  .about-us-copy {
+    .about-us-copy {
     font-size: 1em;
   }
 
-  .company-name {
-    font-size: 1.75em;
+  .space-top-15 {
+    margin-top: 0;
   }
 
-  .copyright {
-    display: block;
+  .space-top-10 {
+    margin-top: 0;
   }
 
-  .small-bg {
-  background: url('../img/bg-home-espectacle-vineyards.jpg');
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
-}
-
-
-  /* COLORS */
   .bg-white {
     background-color: hsla(0, 0%, 99%, 1);
   }
 
-  .small-bg-black {
+  .bg-light-black {
     background-color: hsla(0, 0%, 13%, 1);
   }
 
-  .small-text-white {
-    color: hsla(0, 0%, 99%, .85);
+  .bg-black {
+    background-color: hsla(0, 0%, 13%, 1);
   }
-
-
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 /*// Medium screens //*/
@@ -157,7 +134,7 @@ small {
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
   .company-name {
-    font-size: 2.35em;
+    font-size: 5em;
   }
 
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
