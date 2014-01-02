@@ -56,6 +56,10 @@ small {
   text-transform: capitalize;
 }
 
+.logo {
+  width: 100%
+}
+
 /* COLORS */
 .bg-white {
     background-color: hsla(0, 0%, 99%, .9);
