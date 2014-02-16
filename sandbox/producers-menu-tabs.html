@@ -55,8 +55,10 @@
             <p class="portfolio-copy">We represent Marc de Grazia selections of Italy, Terry Theise Estate selections in Champagne, Austria and Germany, Europvin selections from France and Spain, and many of our own direct European imports.
             </p>
 
-            <dl class="tabs vertical" data-tab>
-              <dd class="active"><a href="#austria">Austria</a></dd>
+
+            <a href="#" data-dropdown="drop" class="large alert radius button dropdown">Producers</a><br />
+            <dl id="drop" data-tab class="f-dropdown">
+              <dd><a href="#austria">Austria</a></dd>
               <dd><a href="#france">France</a></dd>
               <dd><a href="#germany">Germany</a></dd>
               <dd><a href="#italy">Italy</a></dd>
@@ -68,7 +70,7 @@
 
             <div class="tabs-content vertical">
 
-              <div class="content active" id="austria">
+              <div class="content" id="austria">
                 <section id="Producers-Austria">
                 <h1 class="country">Austria</h1>
                   <h2 class="region">Carnuntum</h2>
@@ -497,6 +499,11 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+    </script>
+    <script>
+      $( "dd" ).click(function() {
+        Foundation.libs.dropdown.close($('#drop'));
+      });
     </script>
   </body>
 </html>
