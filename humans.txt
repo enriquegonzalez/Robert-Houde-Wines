@@ -1,8 +1,16 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
-/* zurb.com */
-/* humanstxt.org */
+/* TEAM */
+Web Designer and Developer: Enrique Gonzalez
+Site: http://enriquesportfolio.com
+Twitter: @enriquegonzalez
+
+Website Owner and Content Creator: Robert Houde Wines, LLC
+Site: roberthoudewines.com
+
+/* THANKS */
+Name: Foundation 5 was made by ZURB, an interaction design and design strategy firm in Campbell, CA
+Site: foundation.zurb.com
 
 /* SITE */
-  Standards: HTML5, CSS3
+  Standards: HTML5, CSS3, JS
   Components: jQuery, Orbit, Reveal
-  Software: Sublime, Git, Sass
+  Software: Sublime, Git
