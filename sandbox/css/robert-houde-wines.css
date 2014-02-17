@@ -49,11 +49,11 @@ small {
   margin-top: 5%;
 }
 
-.padding-5 {
+.pad-5 {
   padding: 5%;
 }
 
-.padding-2 {
+.pad-2 {
   padding: 2%;
 }
 
@@ -93,18 +93,50 @@ small {
   color: hsla(0, 0%, 99%, 1);
 }
 
-/* Text */
+/* ICONS */
+.icon-xsmall {
+  font-size: .75em;
+}
 
+.icon-small {
+  font-size: 1em;
+}
+
+.icon-medium {
+  font-size: 1.4em;
+}
+
+.icon-large {
+  font-size: 2em;
+}
+
+.icon-xlarge {
+  font-size: 2.3em;
+}
+
+/* TEXT */
 .bold {
   font-weight: bold;
 }
 
-.text-size-1_25{
-  font-size: 1.25em;
+.text-size-xsmall {
+  font-size: .75em;
 }
 
-.icon-size-medium{
-  font-size: 1.85em;
+.text-size-small {
+  font-size: 1em;
+}
+
+.text-size-medium {
+  font-size: 1.4em;
+}
+
+.text-size-large {
+  font-size: 2em;
+}
+
+.text-size-xlarge {
+  font-size: 2.3em;
 }
 
 .uppercase {
