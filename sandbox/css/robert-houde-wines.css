@@ -1,3 +1,4 @@
+/* BASE */
 @font-face {
   font-family: "ITC Garamond Standard Light";
   src: url("fonts/ITCGaramondStd-Lt.otf");
@@ -5,7 +6,10 @@
   font-style: normal;
 }
 
-/* BASE */
+html body {
+  background: #fff;
+}
+
 /*html body {
   background: url('../img/bg-home-espectacle-vineyards.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
