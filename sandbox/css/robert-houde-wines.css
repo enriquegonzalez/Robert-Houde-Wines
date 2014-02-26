@@ -22,66 +22,83 @@ h1, h2 {
   font-family: 'ITC Garamond Standard Light';
 }
 
-small {
-  font-size: .9em;
-}
-
-/* LAYOUT */
-/*.about-us {
-  -moz-columns:3;
-  -webkit-columns:3;
-  columns:3;
-}*/
-
-.space-bottom-neg1_25 {
-  margin-bottom: -1.25em;
-}
-
-.space-left-5 {
-  margin-left: 5%;
-}
-
-.space-top-15 {
-  margin-top: 15%;
-}
-
-.space-top-10 {
-  margin-top: 10%;
-}
-
-.space-top-5 {
-  margin-top: 5%;
-}
-
-.pad-5 {
-  padding: 5%;
-}
-
-.pad-2 {
-  padding: 2%;
-}
-
-
 /* MODULES */
-/*.about-us-copy, .portfolio-copy {
-  font-size: 1.25em;
-  font-weight: 200;
-  letter-spacing: .035em;
-  line-height: 1.5;
-}*/
-
-.company-name {
-  font-size: 2.35em;
-  /*letter-spacing: .015em;*/
-  text-transform: capitalize;
+.logo__text {
+  margin-top: -0.35em;
 }
 
-.logo {
+/* PRODUCERS */
+.producers__menu-close {
+  cursor: pointer; cursor: hand;
+  color: #222;
+}
+
+.producers__menu-close:hover {
+  color: tomato;
+}
+
+.producers__menu-close:active {
+  color: #eff;
+}
+
+.producers__country {
+  cursor: pointer; cursor: hand;
+  background-color: #eee;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
   width: 100%;
 }
 
+.producers__country:hover {
+  background-color: #eff;
+}
+
+.producers__country:active {
+  background-color: #fff;
+}
+
+.producers__list {
+  -webkit-columns:2;
+     -moz-columns:2;
+          columns:2;
+  list-style: none;
+}
+
+.producer {
+-webkit-column-break-inside:avoid;
+   -moz-column-break-inside:avoid;
+    -ms-column-break-inside:avoid;
+     -o-column-break-inside:avoid;
+        column-break-inside:avoid;
+}
+
+.producer p {
+  font-size: 1.25em;
+}
+
+
+.producer__location {
+  display: block;
+  font-size: .75em;
+  font-style: italic;
+}
+
+/* EVENTS */
+
+.events__list {
+  list-style: none;
+}
+
+.events__list__item {
+  background-color: #eee;
+  margin: 2em 0 2em 0;
+  padding: 2.5em;
+}
+
+/*a[rel="external"] { color: red; }*/
 /* COLORS */
-.bg-white {
+/*.bg-white {
     background-color: hsla(0, 0%, 99%, .85);
 }
 
@@ -95,31 +112,31 @@ small {
 
 .text-white {
   color: hsla(0, 0%, 99%, 1);
-}
+}*/
 
 /* ICONS */
-.icon-xsmall {
+.icon--xsmall {
   font-size: .75em;
 }
 
-.icon-small {
+.icon--small {
   font-size: 1em;
 }
 
-.icon-medium {
+.icon--medium {
   font-size: 1.4em;
 }
 
-.icon-large {
+.icon--large {
   font-size: 2em;
 }
 
-.icon-xlarge {
-  font-size: 2.3em;
+.icon--xlarge {
+  font-size: 3em;
 }
 
 /* TEXT */
-.bold {
+/*.bold {
   font-weight: bold;
 }
 
@@ -142,72 +159,57 @@ small {
 .text-size-xlarge {
   font-size: 2.3em;
 }
+*/
+
+.title-case {
+  text-transform: capitalize;
+}
 
 .uppercase {
   text-transform: uppercase;
 }
 
+/* SLABTEXT */
+/* These rules are used specifically for
+   the slabtext.js plugin which enables the
+   Robert Houde Wines logo text to
+   take up the space of its container */
+.slabtexted .slabtext
+        {
+        display:-moz-inline-box;
+        display:inline-block;
+        white-space:nowrap;
+        }
+.slabtextinactive .slabtext
+        {
+        display:inline;
+        white-space:normal;
+        font-size:1em !important;
+        letter-spacing:inherit !important;
+        word-spacing:inherit !important;
+        *letter-spacing:0 !important;
+        *word-spacing:0 !important;
+        }
+.slabtextdone .slabtext
+        {
+        display:block;
+        }
 
 /************************************/
 /* Foundation Specificity Overrides */
+
+
 
 
 /*// Small screens //*/
 @media only screen { } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) {
-  /*BASE*/
-  small {
-    font-size: 1em;
-  }
-
-  /* LAYOUT */
-  .about-us {
-    -moz-columns:1;
-    -webkit-columns:1;
-    columns:1;
-  }
-
-   .small-space-top-10 {
-    margin-top: 10%;
-  }
-
-  .space-top-15, .space-top-10, .space-top-5 {
-    margin-top: 0;
-  }
-
-
-  /* MODULES */
-  .about-us-copy {
-    font-size: 1em;
-  }
-
-  .copyright {
-    display: block;
-  }
-
-/*  .small-bg {
-  background: url('../img/bg-home-espectacle-vineyards.jpg');
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
-}*/
-
-
-  /* COLORS */
-  .bg-white {
-    background-color: hsla(0, 0%, 99%, 1);
-  }
-
-  .small-bg-black {
-    background-color: hsla(0, 0%, 13%, 1);
-  }
-
-  .small-text-white {
-    color: hsla(0, 0%, 99%, .85);
-  }
-
+.producers__list {
+     -moz-columns:1;
+  -webkit-columns:1;
+          columns:1;
+}
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
