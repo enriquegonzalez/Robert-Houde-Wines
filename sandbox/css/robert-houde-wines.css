@@ -118,7 +118,7 @@ h1, h2 {
   color: #eff;
 }
 
-.producers__country {
+.producers__menu__country {
   border-top: 1px dotted #777;
   cursor: pointer; cursor: hand;
   display: inline-block;
@@ -130,11 +130,11 @@ h1, h2 {
   padding: 2%;
 }
 
-.producers__country:hover {
+.producers__menu__country:hover {
   background-color: #eff;
 }
 
-.producers__country:active {
+.producers__menu__country:active {
   background-color: #fff;
 }
 
