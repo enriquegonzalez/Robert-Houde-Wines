@@ -1,4 +1,49 @@
-/* BASE */
+/* Background Images */
+html body {
+  background: #fff;
+}
+
+html .page--home__background {
+  background: url('../img/backgrounds/bg-vineyard-espectacle-montsant-spain.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+html .page--producers__background {
+  background: url('../img/backgrounds/bg-vineyard-dsc01808x.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+html .page--events__background {
+  background: url('../img/backgrounds/bg-vineyard-dsc01860x.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+html .page--about-us__background {
+  background: url('../img/backgrounds/bg-river-mino-rias-baixas-spain.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+html .page--contact-us__background {
+  background: url('../img/backgrounds/bg-vineyard-dsc6168.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+/* Typography */
 @font-face {
   font-family: "ITC Garamond Standard Light";
   src: url("fonts/ITCGaramondStd-Lt.otf");
@@ -6,31 +51,63 @@
   font-style: normal;
 }
 
-html body {
-  background: #fff;
-}
-
-/*html body {
-  background: url('../img/bg-home-espectacle-vineyards.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
-}*/
-
 h1, h2 {
   font-family: 'ITC Garamond Standard Light';
 }
 
-/* MODULES */
 .logo__text {
+  font-size: 2.75em;
   margin-top: -0.35em;
 }
 
+.page__intro {
+  font-size: 1.5em;
+  font-weight: 200;
+  letter-spacing: .05em;
+  line-height: 1.5;
+  width: 65ex;
+}
+
+.page__title {
+  font-size: 2.75em;
+  font-weight: 200;
+  letter-spacing: .075em;
+  line-height: 1.5;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+/* NAVIGATION */
+.navigation__menu__item {
+  letter-spacing: .10em;
+  text-transform: uppercase;
+}
+
 /* PRODUCERS */
+.producers {
+  background-color: hsla(0, 0%, 99%, 1);
+  margin-top: 5%;
+  padding: 5%;
+}
+
+.producers__menu {
+  background-color: hsla(0, 0%, 99%, 1);
+  padding: 5%;
+}
+
+.producers__menu__title {
+  font-size: 2.3em;
+  font-weight: 400;
+  letter-spacing: .075em;
+  line-height: 1.5;
+  margin-bottom: 3%;
+  text-transform: capitalize;
+}
+
 .producers__menu-close {
   cursor: pointer; cursor: hand;
   color: #222;
+  padding: 5%;
 }
 
 .producers__menu-close:hover {
@@ -42,12 +119,15 @@ h1, h2 {
 }
 
 .producers__country {
+  border-top: 1px dotted #777;
   cursor: pointer; cursor: hand;
-  background-color: #eee;
   display: inline-block;
+  font-size: 1.75em;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+  margin: 0;
+  padding: 2%;
 }
 
 .producers__country:hover {
@@ -56,6 +136,11 @@ h1, h2 {
 
 .producers__country:active {
   background-color: #fff;
+}
+
+.producer__region__list {
+  background-color: #eff;
+  padding: 2%;
 }
 
 .producers__list {
@@ -85,6 +170,10 @@ h1, h2 {
 }
 
 /* EVENTS */
+
+.events {
+  padding: 5%;
+}
 
 .events__list {
   list-style: none;
@@ -135,39 +224,6 @@ h1, h2 {
   font-size: 3em;
 }
 
-/* TEXT */
-/*.bold {
-  font-weight: bold;
-}
-
-.text-size-xsmall {
-  font-size: .75em;
-}
-
-.text-size-small {
-  font-size: 1em;
-}
-
-.text-size-medium {
-  font-size: 1.4em;
-}
-
-.text-size-large {
-  font-size: 2em;
-}
-
-.text-size-xlarge {
-  font-size: 2.3em;
-}
-*/
-
-.title-case {
-  text-transform: capitalize;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
 
 /* SLABTEXT */
 /* These rules are used specifically for
@@ -205,10 +261,17 @@ h1, h2 {
 @media only screen { } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) {
+/* Layout */
 .producers__list {
      -moz-columns:1;
   -webkit-columns:1;
           columns:1;
+}
+
+/* Typography */
+.logo__text {
+  margin-top: -0.2em;
+  font-size: 1.7em;
 }
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
