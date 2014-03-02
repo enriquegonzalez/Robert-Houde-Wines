@@ -12,7 +12,7 @@ html .page--home__background {
 }
 
 html .page--producers__background {
-  background: url('../img/backgrounds/bg-vineyard-dsc01808x.jpg') no-repeat center center fixed;
+  background: url('../img/backgrounds/bg-vineyard-dsc01808.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -20,7 +20,7 @@ html .page--producers__background {
 }
 
 html .page--events__background {
-  background: url('../img/backgrounds/bg-vineyard-dsc01860x.jpg') no-repeat center center fixed;
+  background: url('../img/backgrounds/bg-vineyard-dsc01860.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -158,19 +158,17 @@ h1, h2 {
         column-break-inside:avoid;
 }
 
-.producer p {
-  font-size: 1.25em;
-}
-
-
 .producer__location {
   display: block;
   font-size: .75em;
   font-style: italic;
 }
 
-/* EVENTS */
+.producers__menu section:last-of-type {
+  border-bottom: 1px dotted #777;
+}
 
+/* EVENTS */
 .events {
   padding: 5%;
 }
