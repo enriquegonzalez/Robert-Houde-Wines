@@ -1,4 +1,11 @@
-/* Background Images */
+/* BASE */
+
+footer {
+  padding: 5%;
+  margin-bottom: 10%;
+}
+
+/* Backgrounds */
 html body {
   background: #fff;
 }
@@ -43,6 +50,10 @@ html .page--contact-us__background {
           background-size: cover;
 }
 
+.page__footer__background {
+  background-color: hsla(0, 0%, 13%, .85);
+}
+
 /* Typography */
 @font-face {
   font-family: "ITC Garamond Standard Light";
@@ -53,6 +64,11 @@ html .page--contact-us__background {
 
 h1, h2 {
   font-family: 'ITC Garamond Standard Light';
+}
+
+.footer__copy {
+  color: #fff;
+  font-size: 2em;
 }
 
 .logo__text {
@@ -122,7 +138,7 @@ h1, h2 {
   border-top: 1px dotted #777;
   cursor: pointer; cursor: hand;
   display: inline-block;
-  font-size: 1.75em;
+  font-size: 2.25em;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
