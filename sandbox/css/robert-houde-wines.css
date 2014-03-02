@@ -275,58 +275,66 @@ h1, h2 {
 @media only screen { } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) {
-/* Layout */
-.producers__list {
-     -moz-columns:1;
-  -webkit-columns:1;
-          columns:1;
-}
+  /* Layout */
+  .producers__list {
+       -moz-columns:1;
+    -webkit-columns:1;
+            columns:1;
+  }
 
-.l-small--hide {
-  display: none;
-}
+  .l-small--hide {
+    display: none;
+  }
 
-/* Typography */
+  /* Typography */
 
-.logo__text {
-  margin-top: -0.2em;
-  font-size: 1.7em;
-}
+  .logo__text {
+    margin-top: -0.2em;
+    font-size: 1.7em;
+  }
 
-.page__title {
-  font-size: 2.35em;
-  text-align: center;
-}
+  .page__title {
+    font-size: 2.35em;
+    text-align: center;
+  }
 
-.page__intro {
-  font-size: 1em;
-  font-weight: 200;
-  letter-spacing: .025em;
-  line-height: 1.5;
-  width: 100%;
-}
+  .page__intro {
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: .025em;
+    width: 100%;
+  }
 
-.footer__copy {
-  font-size: 1.2em;
-}
+  .footer__copy {
+    font-size: 1.2em;
+  }
 
-/* Producers */
-.producers__menu__title {
-  font-size: 1.25em;
-  font-weight: 300;
-  letter-spacing: .075em;
-  line-height: 1.5;
-  margin-bottom: 3%;
-  text-align: center;
-  text-transform: capitalize;
-}
+  /* Producers */
+  .producers__menu__title {
+    font-size: 1.25em;
+    font-weight: 300;
+    text-align: center;
+  }
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 /*// Medium screens //*/
 @media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  /* Typography */
+  .page__intro {
+    width: 100%;
+  }
+
+  .producers__menu__title {
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+  }
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 /*// Large screens //*/
 @media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
