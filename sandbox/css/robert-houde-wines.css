@@ -5,6 +5,12 @@ footer {
   margin-bottom: 10%;
 }
 
+/* Layout */
+
+.l-top-5 {
+  margin-top: 3%;
+}
+
 /* Backgrounds */
 html body {
   background: #fff;
@@ -51,7 +57,7 @@ html .page--contact-us__background {
 }
 
 .page__footer__background {
-  background-color: hsla(0, 0%, 13%, .85);
+  background-color: hsla(0, 0%, 13%, 1);
 }
 
 /* Typography */
@@ -102,13 +108,12 @@ h1, h2 {
 /* PRODUCERS */
 .producers {
   background-color: hsla(0, 0%, 99%, 1);
-  margin-top: 5%;
   padding: 5%;
 }
 
 .producers__menu {
   background-color: hsla(0, 0%, 99%, 1);
-  padding: 5%;
+  padding: 0 5% 5% 5%;
 }
 
 .producers__menu__title {
@@ -160,9 +165,9 @@ h1, h2 {
 }
 
 .producers__list {
-  -webkit-columns:2;
-     -moz-columns:2;
-          columns:2;
+  -webkit-column-width:15em;
+     -moz-column-width:15em;
+          column-width:15em;
   list-style: none;
 }
 
@@ -172,6 +177,11 @@ h1, h2 {
     -ms-column-break-inside:avoid;
      -o-column-break-inside:avoid;
         column-break-inside:avoid;
+}
+
+.producer__card {
+  font-size: 1.25em;
+  margin-bottom: 1rem;
 }
 
 .producer__location {
