@@ -102,11 +102,6 @@ h1, h2 {
   padding: 5%;
 }
 
-.producers__menu {
-  background-color: hsla(0, 0%, 99%, 1);
-  padding: 0 5% 5% 5%;
-}
-
 .producers__menu__title {
   font-size: 3em;
   font-weight: 600;
@@ -116,17 +111,17 @@ h1, h2 {
   text-transform: capitalize;
 }
 
-.producers__menu-close {
+.producers__menu__close {
   cursor: pointer; cursor: hand;
   color: #222;
   padding: 5%;
 }
 
-.producers__menu-close:hover {
+.producers__menu__close:hover {
   color: tomato;
 }
 
-.producers__menu-close:active {
+.producers__menu__close:active {
   color: #eff;
 }
 
@@ -240,27 +235,18 @@ h1, h2 {
   font-size: 1.25em;
 }
 
-/* COLORS */
+/* ABOUT US */
+.about-us {
+  background-color: hsla(0, 0%, 99%, .95);
+  padding: 5%;
+}
 
+
+/* COLORS */
 .red {
   color: tomato;
 }
 
-/*.bg-white {
-    background-color: hsla(0, 0%, 99%, .85);
-}
-
-.bg-black {
-    background-color: hsla(0, 0%, 13%, .65);
-}
-
-.text-light-grey {
-  color: hsla(0, 0%, 80%, 1);
-}
-
-.text-white {
-  color: hsla(0, 0%, 99%, 1);
-}*/
 
 /* ICONS */
 .icon--xsmall {
