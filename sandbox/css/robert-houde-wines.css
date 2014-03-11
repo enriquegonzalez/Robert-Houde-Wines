@@ -6,10 +6,10 @@ footer {
 }
 
 /* Layout */
-
+/*
 .l-top-5 {
   margin-top: 3%;
-}
+}*/
 
 /* Backgrounds */
 html body {
@@ -109,6 +109,24 @@ h1, h2 {
   line-height: 1.5;
   text-align: center;
   text-transform: capitalize;
+}
+
+.producers__menu__title:after, .producers__menu__title:before {
+  content: "";
+  display: inline-block;
+  height:3rem;
+  width: 3rem;
+}
+.producers__menu__title:after {
+  background: url("../img/producers/flourish-right.svg") no-repeat;
+  background-size: 3rem;
+  margin: -1rem 0 -1rem 0.5rem;
+}
+
+.producers__menu__title:before {
+  background: url("../img/producers/flourish-left.svg") no-repeat;
+  background-size: 3rem;
+  margin: -1rem 0.5rem -1rem 0;
 }
 
 .producers__menu__close {
@@ -344,6 +362,24 @@ h1, h2 {
   .producers__menu__title {
     font-size: 1.25em;
     font-weight: 300;
+  }
+
+  .producers__menu__title:after, .producers__menu__title:before {
+    content: "";
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .producers__menu__title:after {
+    background: url("../img/producers/flourish-right.svg") no-repeat;
+    background-size: 1.5rem;
+    margin: -1rem 0 -0.5rem 0.5rem;
+  }
+
+  .producers__menu__title:before {
+    background: url("../img/producers/flourish-left.svg") no-repeat;
+    background-size: 1.5rem;
+    margin: -1rem 0.5rem -0.5rem 0;
   }
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
