@@ -143,14 +143,6 @@ h1, h2 {
   background-color: #fff;
 }
 
-/*.producers__menu__country:after {
-  content: "";
-  display: inline-block;
-  height:3rem;
-  width: 3rem;
-  margin: -1rem 0 -1rem 0.5rem;
-}*/
-
 .producers__menu__country:before {
   content: "";
   display: inline-block;
@@ -202,21 +194,11 @@ h1, h2 {
 .producer__region__list {
   background-color: #ffe;
   padding: 2%;
+  text-align: center;
 }
 
 .producers__list {
-  -webkit-column-width:15em;
-     -moz-column-width:15em;
-          column-width:15em;
   list-style: none;
-}
-
-.producer {
--webkit-column-break-inside:avoid;
-   -moz-column-break-inside:avoid;
-    -ms-column-break-inside:avoid;
-     -o-column-break-inside:avoid;
-        column-break-inside:avoid;
 }
 
 .producer__card {
@@ -224,9 +206,10 @@ h1, h2 {
 }
 
 .producer__location {
-  display: block;
+  display: inline-block;
   font-size: .75em;
   font-style: italic;
+  margin-left: 1em;
 }
 
 .producers__menu__close {
