@@ -56,6 +56,10 @@ h1, h2 {
   font-family: 'ITC Garamond Standard Light';
 }
 
+p {
+  font-size: 1.25em;
+}
+
 .footer__copy {
   color: #fff;
   font-size: 2em;
