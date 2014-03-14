@@ -58,6 +58,7 @@ h1, h2 {
 
 p {
   font-size: 1.25em;
+  /*margin: 0 2rem 2rem 2rem;*/
 }
 
 .footer__copy {
@@ -385,6 +386,11 @@ p {
   }
 
   /* Typography */
+
+  p {
+    font-size: 1.2rem;
+    margin: .5rem;
+  }
 
   .logo__text {
     margin-top: -0.2em;
