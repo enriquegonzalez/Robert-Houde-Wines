@@ -8,10 +8,6 @@ p {
   font-size: 1.25rem;
 }
 
-img {
-  margin-bottom: 2rem;
-}
-
 /* BACKGROUNDS */
 html body {
   background: #fff;
@@ -313,6 +309,14 @@ h1, h2 {
   padding: 5%;
 }
 
+.bio__image {
+  margin-bottom: 2rem;
+}
+
+.bio__copy {
+  padding-right: 5rem;
+}
+
 
 /* COLORS */
 .red {
@@ -382,6 +386,10 @@ h1, h2 {
 
   .l-small--hide {
     display: none;
+  }
+
+  .bio__copy {
+    padding-right: 0;
   }
 
   /* Typography */
