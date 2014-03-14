@@ -4,36 +4,44 @@ footer {
   margin-bottom: 10%;
 }
 
+p {
+  font-size: 1.25rem;
+}
+
+img {
+  margin-bottom: 2rem;
+}
+
 /* BACKGROUNDS */
 html body {
   background: #fff;
 }
 
-html .page--home__background {
+html .home__background {
   background: url('../img/backgrounds/bg-vineyard-espectacle-montsant-spain.jpg') no-repeat center center fixed;
 }
 
-html .page--producers__background {
+html .producers__background {
   background: url('../img/backgrounds/bg-vineyard-dsc01808.jpg') no-repeat center center fixed;
 }
 
-html .page--events__background {
+html .events__background {
   background: url('../img/backgrounds/bg-vineyard-dsc01860.jpg') no-repeat center center fixed;
 }
 
-html .page--about-us__background {
+html .about-us__background {
   background: url('../img/backgrounds/bg-river-mino-rias-baixas-spain.jpg') no-repeat center center fixed;
 }
 
-html .page--contact-us__background {
+html .contact-us__background {
   background: url('../img/backgrounds/bg-vineyard-dsc6168.jpg') no-repeat center center fixed;
 }
 
-html .page--home__background,
-html .page--producers__background,
-html .page--events__background,
-html .page--about-us__background,
-html .page--contact-us__background {
+html .home__background,
+html .producers__background,
+html .events__background,
+html .about-us__background,
+html .contact-us__background {
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -56,33 +64,28 @@ h1, h2 {
   font-family: 'ITC Garamond Standard Light';
 }
 
-p {
-  font-size: 1.25em;
-  /*margin: 0 2rem 2rem 2rem;*/
-}
-
 .footer__copy {
   color: #fff;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .logo__text {
-  font-size: 2.75em;
-  margin-top: -0.35em;
+  font-size: 2.75rem;
+  margin-top: -0.35rem;
 }
 
 .page__intro {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 200;
-  letter-spacing: .05em;
+  letter-spacing: .05rem;
   line-height: 1.5;
   width: 65ex;
 }
 
 .page__title {
-  font-size: 2.75em;
+  font-size: 2.75rem;
   font-weight: 200;
-  letter-spacing: .075em;
+  letter-spacing: .075rem;
   line-height: 1.5;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -91,7 +94,7 @@ p {
 /* NAVIGATION */
 
 .top-bar-section ul li>a, .navigation__menu__item { /* Foundation Specificity Override */
-  letter-spacing: .075em;
+  letter-spacing: .075rem;
   text-transform: uppercase;
 }
 
@@ -102,7 +105,7 @@ p {
 }
 
 .producers__menu__title {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 600;
   font-style: italic;
   line-height: 1.5;
@@ -132,7 +135,7 @@ p {
   border-top: 1px dotted #777;
   cursor: pointer; cursor: hand;
   display: inline-block;
-  font-size: 2.25em;
+  font-size: 2.25rem;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
@@ -210,9 +213,9 @@ p {
 }
 
 .producers__list {
-  -webkit-column-width:15em;
-     -moz-column-width:15em;
-          column-width:15em;
+  -webkit-column-width:15rem;
+     -moz-column-width:15rem;
+          column-width:15rem;
   list-style: none;
 }
 
@@ -230,7 +233,7 @@ p {
 
 .producer__location {
   display: block;
-  font-size: .75em;
+  font-size: .75rem;
   font-style: italic;
 }
 
@@ -265,12 +268,12 @@ p {
 .events__list__item {
   background-color: hsla(0, 0%, 99%, 1);
   box-shadow: 1px 1px 2px #777;
-  margin: 2em 0 2em 0;
-  padding: 2.5em;
+  margin: 2rem 0 2rem 0;
+  padding: 2.5rem;
 }
 
 .event__title {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 600;
   font-style: italic;
   line-height: 1.5;
@@ -280,18 +283,14 @@ p {
 
 .event__date {
   color: hsla(118, 50%, 40%, 1);
-  font-size: 1.65em;
+  font-size: 1.65rem;
   line-height: 1.5;
-}
-
-.event__description {
-  font-size: 1.25em;
 }
 
 .event__alert {
   background-color: hsla(118, 50%, 35%, .85);
   color: #fff;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.5;
   padding: 2%;
@@ -300,12 +299,12 @@ p {
 }
 
 .event__location {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
 .event__rsvp {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 /* ABOUT US */
@@ -323,23 +322,23 @@ p {
 
 /* ICONS */
 .icon--xsmall {
-  font-size: .75em;
+  font-size: .75rem;
 }
 
 .icon--small {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .icon--medium {
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
 .icon--large {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .icon--xlarge {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 
@@ -358,7 +357,7 @@ p {
         {
         display:inline;
         white-space:normal;
-        font-size:1em !important;
+        font-size:1rem !important;
         letter-spacing:inherit !important;
         word-spacing:inherit !important;
         *letter-spacing:0 !important;
@@ -373,7 +372,7 @@ p {
 /*// Small screens //*/
 @media only screen { } /* Define mobile styles */
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 40rem) {
   /* Layout */
   .producers__list {
        -moz-columns:1;
@@ -387,35 +386,30 @@ p {
 
   /* Typography */
 
-  p {
-    font-size: 1.2rem;
-    margin: .5rem;
-  }
-
   .logo__text {
-    margin-top: -0.2em;
-    font-size: 1.7em;
+    margin-top: -0.2rem;
+    font-size: 1.7rem;
   }
 
   .page__title {
-    font-size: 2.35em;
+    font-size: 2.35rem;
     text-align: center;
   }
 
   .page__intro {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 200;
-    letter-spacing: .025em;
+    letter-spacing: .025rem;
     width: 100%;
   }
 
   .footer__copy {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 
   /* Producers */
   .producers__menu__title {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 300;
   }
 
@@ -440,9 +434,9 @@ p {
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 /*// Medium screens //*/
-@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063rem) { } /* min-width 641px, medium screens */
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+@media only screen and (min-width: 40.063rem) and (max-width: 64rem) {
 
   /* Typography */
   .page__intro {
@@ -450,21 +444,21 @@ p {
   }
 
   .producers__menu__title {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 400;
   }
 
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 /*// Large screens //*/
-@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063rem) { } /* min-width 1025px, large screens */
 
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 64.063rem) and (max-width: 90rem) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
 
 /*// XLarge screens //*/
-@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063rem) { } /* min-width 1441px, xlarge screens */
 
-@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+@media only screen and (min-width: 90.063rem) and (max-width: 120rem) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 
 /*// XXLarge screens //*/
-@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
+@media only screen and (min-width: 120.063rem) { } /* min-width 1921px, xlarge screens */

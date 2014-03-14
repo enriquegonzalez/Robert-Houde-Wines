@@ -9,31 +9,31 @@ html body {
   background: #fff;
 }
 
-html .page--home__background {
+html .home__background {
   background: url('../img/backgrounds/bg-vineyard-espectacle-montsant-spain.jpg') no-repeat center center fixed;
 }
 
-html .page--producers__background {
+html .producers__background {
   background: url('../img/backgrounds/bg-vineyard-dsc01808.jpg') no-repeat center center fixed;
 }
 
-html .page--events__background {
+html .events__background {
   background: url('../img/backgrounds/bg-vineyard-dsc01860.jpg') no-repeat center center fixed;
 }
 
-html .page--about-us__background {
+html .about-us__background {
   background: url('../img/backgrounds/bg-river-mino-rias-baixas-spain.jpg') no-repeat center center fixed;
 }
 
-html .page--contact-us__background {
+html .contact-us__background {
   background: url('../img/backgrounds/bg-vineyard-dsc6168.jpg') no-repeat center center fixed;
 }
 
-html .page--home__background,
-html .page--producers__background,
-html .page--events__background,
-html .page--about-us__background,
-html .page--contact-us__background {
+html .home__background,
+html .producers__background,
+html .events__background,
+html .about-us__background,
+html .contact-us__background {
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
