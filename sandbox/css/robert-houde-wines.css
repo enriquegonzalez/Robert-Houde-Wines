@@ -308,32 +308,17 @@ h1, h2 {
   padding: 5%;
 }
 
-.services__title {
-  font-size: 2.25rem;
-  font-weight: 200;
-  letter-spacing: .075rem;
-  line-height: 1.5;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-
-.team__title {
-  font-size: 2.25rem;
-  font-weight: 200;
-  letter-spacing: .075rem;
-  line-height: 1.5;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .bio__title {
-  font-size: 2.75rem;
 }
 
 .bio__image {
   margin-bottom: 2rem;
+  margin-top: 5rem;
 }
+
+/*.bio__image--robert {
+  margin-top: 2rem;
+}*/
 
 .bio__copy {
   padding-right: 5rem;
