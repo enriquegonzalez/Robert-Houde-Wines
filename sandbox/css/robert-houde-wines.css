@@ -324,6 +324,12 @@ h1, h2 {
   margin-top: 2rem;
 }
 
+/* CONTACT US */
+.contact-us {
+  background-color: hsla(0, 0%, 99%, 1);
+  padding: 5%;
+}
+
 /* COLORS */
 .red {
   color: tomato;
