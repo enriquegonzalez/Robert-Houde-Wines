@@ -85,13 +85,13 @@ h1, h2 {
 }
 
 .section--columns {
-  -webkit-column-width:20rem;
-     -moz-column-width:20rem;
-          column-width:20rem;
+  -webkit-column-width:30rem;
+     -moz-column-width:30rem;
+          column-width:30rem;
 }
 
 .section--feature {
-  background-color: hsla(0,0%,13%,.85);
+  background-color: hsla(0,0%,13%,.65);
   color: #fff;
 }
 
@@ -113,12 +113,14 @@ h1, h2 {
 
 
 /*  HOME  */
+.button--about-us,
+.button--contact-us,
+.button--events,
 .button--producers {
+  letter-spacing: .125rem;
   margin-top: 2rem;
+  text-transform: uppercase;
 }
-
-
-
 
 
 /* PRODUCERS */
