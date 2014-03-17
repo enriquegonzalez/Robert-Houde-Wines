@@ -80,14 +80,14 @@ h1, h2 {
 }
 
 .section {
-  background-color: hsla(0, 0%, 99%, .85);
-  padding: 2rem 2rem 5rem 2rem;
+  /*background-color: hsla(0, 0%, 99%, .85);*/
+  padding: 2rem;
 }
 
 .section--columns {
-  -webkit-column-width:30rem;
-     -moz-column-width:30rem;
-          column-width:30rem;
+  -webkit-column-width:17rem;
+     -moz-column-width:17rem;
+          column-width:17rem;
 }
 
 .section--feature {
@@ -118,7 +118,7 @@ h1, h2 {
 .button--events,
 .button--producers {
   letter-spacing: .125rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   text-transform: uppercase;
 }
 
