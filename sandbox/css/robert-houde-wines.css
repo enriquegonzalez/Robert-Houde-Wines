@@ -80,7 +80,7 @@ h1, h2 {
 }
 
 .section {
-  /*background-color: hsla(0, 0%, 99%, .85);*/
+  background-color: hsla(0, 0%, 99%, .85);
   padding: 2rem;
 }
 
@@ -94,6 +94,7 @@ h1, h2 {
   background-color: hsla(0,0%,13%,.65);
   color: #fff;
 }
+
 
 .title {
   color: inherit;
@@ -385,6 +386,10 @@ h1, h2 {
 
 .icon--xlarge {
   font-size: 3rem;
+}
+
+.bg {
+  background-color: hsla(0, 0%, 99%, .85);
 }
 
 /* SLABTEXT */
