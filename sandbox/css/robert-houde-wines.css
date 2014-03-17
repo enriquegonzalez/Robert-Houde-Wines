@@ -75,7 +75,10 @@ h1, h2 {
   font-weight: 200;
   letter-spacing: .05rem;
   line-height: 1.5;
-  width: 65ex;
+}
+
+.page--contact-us__intro {
+  width: 100%;
 }
 
 .page__title {
