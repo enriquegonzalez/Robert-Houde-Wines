@@ -1,7 +1,8 @@
 /* BASE */
 footer {
-  padding: 5%;
-  margin-bottom: 10%;
+    background-color: hsla(0,0%,13%,1);
+    padding: 3rem;
+    margin-bottom: 5rem;
 }
 
 p {
@@ -13,23 +14,23 @@ html body {
   background: #fff;
 }
 
-html .home__background {
+html .home {
   background: url('../img/backgrounds/bg-vineyard-espectacle-montsant-spain.jpg') no-repeat center center fixed;
 }
 
-html .producers__background {
+html .producers {
   background: url('../img/backgrounds/bg-vineyard-dsc01808.jpg') no-repeat center center fixed;
 }
 
-html .events__background {
+html .events {
   background: url('../img/backgrounds/bg-vineyard-dsc01860.jpg') no-repeat center center fixed;
 }
 
-html .about-us__background {
+html .about-us {
   background: url('../img/backgrounds/bg-river-mino-rias-baixas-spain.jpg') no-repeat center center fixed;
 }
 
-html .contact-us__background {
+html .contact-us {
   background: url('../img/backgrounds/bg-vineyard-dsc6168.jpg') no-repeat center center fixed;
 }
 
@@ -42,10 +43,6 @@ html .contact-us__background {
      -moz-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
-}
-
-.page__footer__background {
-  background-color: hsla(0, 0%, 13%, 1);
 }
 
 /* Typography */
@@ -70,21 +67,39 @@ h1, h2 {
   margin-top: -0.35rem;
 }
 
-.page__intro {
+.intro {
   font-size: 1.5rem;
   font-weight: 200;
-  letter-spacing: .05rem;
+  letter-spacing: .125rem;
   line-height: 1.5;
+  width: 65ex;
 }
 
-.page--contact-us__intro {
+.intro--contact-us {
   width: 100%;
 }
 
-.page__title {
+.section {
+  background-color: hsla(0, 0%, 99%, .85);
+  padding: 2rem 2rem 5rem 2rem;
+}
+
+.section--columns {
+  -webkit-column-width:20rem;
+     -moz-column-width:20rem;
+          column-width:20rem;
+}
+
+.section--feature {
+  background-color: hsla(0,0%,13%,.85);
+  color: #fff;
+}
+
+.title {
+  color: inherit;
   font-size: 2.75rem;
   font-weight: 200;
-  letter-spacing: .075rem;
+  letter-spacing: .25rem;
   line-height: 1.5;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -95,6 +110,16 @@ h1, h2 {
   letter-spacing: .075rem;
   text-transform: uppercase;
 }
+
+
+/*  HOME  */
+.button--producers {
+  margin-top: 2rem;
+}
+
+
+
+
 
 /* PRODUCERS */
 .producers {
@@ -418,7 +443,7 @@ h1, h2 {
     text-align: center;
   }
 
-  .page__intro {
+  .intro {
     font-size: 1rem;
     font-weight: 200;
     letter-spacing: .025rem;
