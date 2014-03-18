@@ -27,7 +27,7 @@ html .events {
 }
 
 html .about-us {
-  background: url("../img/backgrounds/bg-river-mino-rias-baixas-spain.jpg") no-repeat center center fixed;
+  background: url("../img/backgrounds/bg-vineyard-dsc02468.jpg") no-repeat center center fixed;
 }
 
 html .contact-us {
@@ -64,7 +64,9 @@ h6 {
 
 .footer__copy {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.65rem;
+  font-weight: 200;
+  letter-spacing: .175rem
 }
 
 .logo__text {
@@ -85,8 +87,8 @@ h6 {
 }
 
 .section {
-  background-color: hsla(0, 0%, 99%, .85);
-  padding: 2rem;
+  background-color: hsla(0, 0%, 99%, .9);
+  padding: 5rem;
 }
 
 .section--feature {
@@ -111,7 +113,6 @@ h6 {
   letter-spacing: .075rem;
   text-transform: uppercase;
 }
-
 
 /*  HOME  */
 .button--about-us,
@@ -141,6 +142,7 @@ h6 {
   height:3rem;
   width: 3rem;
 }
+
 .producers__menu__title:after {
   background: url("../img/producers/flourish-right.svg") no-repeat;
   background-size: 3rem;
@@ -325,9 +327,6 @@ h6 {
 }
 
 /* ABOUT US */
-.bio__title {
-}
-
 .bio__image {
   margin-bottom: 2rem;
   margin-top: 5rem;
@@ -339,12 +338,6 @@ h6 {
 
 .bio--mark {
   margin-top: 2rem;
-}
-
-/* CONTACT US */
-.contact-us {
-  background-color: hsla(0, 0%, 99%, 1);
-  padding: 5%;
 }
 
 /* COLORS */
@@ -406,6 +399,10 @@ h6 {
 
 @media only screen and (max-width: 40rem) {
   /* Layout */
+  .section {
+    padding: 1rem;
+  }
+
   .producers__list {
        -moz-columns:1;
     -webkit-columns:1;
@@ -416,11 +413,10 @@ h6 {
     display: none;
   }
 
-  .bio__copy {
-    padding-right: 0;
-  }
-
   /* Typography */
+  p {
+    font-size: 1rem;
+  }
 
   .logo__text {
     margin-top: -0.2rem;
@@ -435,7 +431,10 @@ h6 {
   }
 
   .footer__copy {
-    font-size: 1.2rem;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 200;
+    letter-spacing: .025rem
   }
 
   /* Producers */
@@ -460,6 +459,56 @@ h6 {
     background: url("../img/producers/flourish-left.svg") no-repeat;
     background-size: 1.5rem;
     margin: -1rem 0.5rem -0.5rem 0;
+  }
+
+  /* EVENTS */
+  .events__list__item {
+    background-color: inherit;
+    border-top: 1px solid hsla(118, 50%, 35%, .85);
+    /*border-bottom: 1px solid hsla(118, 50%, 35%, .85);*/
+    box-shadow: none;
+    margin: 2rem 0 2rem 0;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .event__title {
+    font-size: 1.65rem;
+    font-weight: 200;
+  }
+
+  .event__date {
+    font-size: 1rem;
+  }
+
+  .event__time {
+    display: block;
+  }
+
+  /* ABOUT US */
+  .bio__image {
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+  }
+
+  .bio__title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .bio__copy {
+    padding: 1rem;
+  }
+
+  /* BUTTONS */
+  .button--about-us,
+  .button--contact-us,
+  .button--events,
+  .button--producers {
+    letter-spacing: .125rem;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    width: 100%;
   }
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */

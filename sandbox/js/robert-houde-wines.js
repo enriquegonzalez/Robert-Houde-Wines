@@ -11,75 +11,16 @@
         setTimeout(slabTextHeadlines, 500);
     });
 
-
 // PRODUCERS
 // Producer Menus
-$('#ProducersAustria').click( function() {
-  $('#ProducersAustriaRegionList').slideToggle();
+$('h1[id^=Producers]').click( function() {
+  $(this).siblings('div[id$=RegionList]').slideToggle();
 });
 
-$('#ProducersFrance').click( function() {
-  $('#ProducersFranceRegionList').slideToggle();
-});
-
-$('#ProducersGermany').click( function() {
-  $('#ProducersGermanyRegionList').slideToggle();
-});
-
-$('#ProducersItaly').click( function() {
-  $('#ProducersItalyRegionList').slideToggle();
-});
-
-$('#ProducersPortugal').click( function() {
-  $('#ProducersPortugalRegionList').slideToggle();
-});
-
-$('#ProducersSlovenia').click( function() {
-  $('#ProducersSloveniaRegionList').slideToggle();
-});
-
-$('#ProducersSpain').click( function() {
-  $('#ProducersSpainRegionList').slideToggle();
-});
-
-$('#ProducersUSA').click( function() {
-  $('#ProducersUSARegionList').slideToggle();
-});
-
-
-  // Menu Closers
-  $('#ProducersAustriaRegionListClose').click( function() {
-    $('#ProducersAustriaRegionList').slideUp();
+  // Menu Closer
+  $('i[id$=RegionListClose]').click( function() {
+    $(this).parents('div[id$=RegionList]').slideUp();
   });
-
-  $('#ProducersFranceRegionListClose').click( function() {
-    $('#ProducersFranceRegionList').slideUp();
-  });
-
-  $('#ProducersGermanyRegionListClose').click( function() {
-    $('#ProducersGermanyRegionList').slideUp();
-  });
-
-  $('#ProducersItalyRegionListClose').click( function() {
-    $('#ProducersItalyRegionList').slideUp();
-  });
-
-  $('#ProducersPortugalRegionListClose').click( function() {
-    $('#ProducersPortugalRegionList').slideUp();
-  });
-
-  $('#ProducersSloveniaRegionListClose').click( function() {
-    $('#ProducersSloveniaRegionList').slideUp();
-  });
-
-  $('#ProducersSpainRegionListClose').click( function() {
-    $('#ProducersSpainRegionList').slideUp();
-  });
-
-  $('#ProducersUSARegionListClose').click( function() {
-    $('#ProducersUSARegionList').slideUp();
-  });
-
 
 // Producer Links
 $('a[rel="external"]').attr('target', '_blank');
