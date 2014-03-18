@@ -53,7 +53,12 @@ html .contact-us {
   font-style: normal;
 }
 
-h1, h2 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "ITC Garamond Standard Light";
 }
 
@@ -101,7 +106,8 @@ h1, h2 {
 }
 
 /* NAVIGATION */
-.top-bar-section ul li > a, .navigation__menu__item { /* Foundation Specificity Override */
+.top-bar-section ul li > a,
+.navigation__menu__item { /* Foundation Specificity Override */
   letter-spacing: .075rem;
   text-transform: uppercase;
 }
@@ -128,7 +134,8 @@ h1, h2 {
   text-transform: capitalize;
 }
 
-.producers__menu__title:after, .producers__menu__title:before {
+.producers__menu__title:after,
+.producers__menu__title:before {
   content: "";
   display: inline-block;
   height:3rem;
@@ -318,11 +325,6 @@ h1, h2 {
 }
 
 /* ABOUT US */
-.about-us {
-  background-color: hsla(0, 0%, 99%, .95);
-  padding: 5%;
-}
-
 .bio__title {
 }
 
