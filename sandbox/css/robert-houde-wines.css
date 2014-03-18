@@ -271,11 +271,6 @@ h1, h2 {
 }
 
 /* EVENTS */
-.events {
-  background-color: hsla(0, 0%, 99%, .95);
-  padding: 5%;
-}
-
 .events__list {
   list-style: none;
 }
