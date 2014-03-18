@@ -225,21 +225,11 @@ h1, h2 {
 .producer__region__list {
   background-color: #ffe;
   padding: 2%;
+  text-align: center;
 }
 
 .producers__list {
-  -webkit-column-width:15rem;
-     -moz-column-width:15rem;
-          column-width:15rem;
   list-style: none;
-}
-
-.producer {
--webkit-column-break-inside:avoid;
-   -moz-column-break-inside:avoid;
-    -ms-column-break-inside:avoid;
-     -o-column-break-inside:avoid;
-        column-break-inside:avoid;
 }
 
 .producer__card {
