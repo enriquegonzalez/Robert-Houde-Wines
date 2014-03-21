@@ -1,0 +1,565 @@
+/* BASE */
+footer {
+    background-color: hsla(0,0%,13%,.85);
+    padding: 3rem;
+    margin-bottom: 5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+/* BACKGROUNDS */
+html body {
+  background: #fff;
+}
+
+html .home {
+  background: url("../img/backgrounds/bg-vineyard-espectacle-montsant-spain.jpg") no-repeat center center fixed;
+}
+
+html .producers {
+  background: url("../img/backgrounds/bg-vineyard-dsc01808.jpg") no-repeat center center fixed;
+}
+
+html .events {
+  background: url("../img/backgrounds/bg-vineyard-dsc01860.jpg") no-repeat center center fixed;
+}
+
+html .about-us {
+  background: url("../img/backgrounds/bg-vineyard-dsc02468.jpg") no-repeat center center fixed;
+}
+
+html .contact-us {
+  background: url("../img/backgrounds/bg-vineyard-dsc6168.jpg") no-repeat center center fixed;
+}
+
+html .home,
+html .producers,
+html .events,
+html .about-us,
+html .contact-us {
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+/* Typography */
+@font-face {
+  font-family: "ITC Garamond Standard Light";
+  src: url("fonts/ITCGaramondStd-Lt.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "ITC Garamond Standard Light";
+}
+
+.footer__copy {
+  color: #fff;
+  font-size: 1.65rem;
+  font-weight: 200;
+  letter-spacing: .175rem
+}
+
+.logo__text {
+  font-size: 2.75rem;
+  margin-top: -0.35rem;
+}
+
+.intro {
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: .125rem;
+  line-height: 1.5;
+  width: 65ex;
+}
+
+.intro--contact-us {
+  width: 100%;
+}
+
+.section {
+  background-color: hsla(0, 0%, 99%, .9);
+  padding: 5rem;
+}
+
+.section--feature {
+  background-color: hsla(0,0%,13%,.65);
+  color: #fff;
+}
+
+
+.title {
+  color: inherit;
+  font-size: 2.5rem;
+  font-weight: 200;
+  letter-spacing: .25rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+/* NAVIGATION */
+.top-bar-section ul li > a,
+.navigation__menu__item { /* Foundation Specificity Override */
+  letter-spacing: .075rem;
+  text-transform: uppercase;
+}
+
+/*  HOME  */
+.button--about-us,
+.button--contact-us,
+.button--events,
+.button--producers {
+  letter-spacing: .125rem;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+}
+
+
+/* PRODUCERS */
+.producers__menu__title {
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.producers__menu__title:after,
+.producers__menu__title:before {
+  content: "";
+  display: inline-block;
+  height:3rem;
+  width: 3rem;
+}
+
+.producers__menu__title:after {
+  background: url("../img/producers/flourish-right.svg") no-repeat;
+  background-size: 3rem;
+  margin: -1rem 0 -1rem 0.5rem;
+}
+
+.producers__menu__title:before {
+  background: url("../img/producers/flourish-left.svg") no-repeat;
+  background-size: 3rem;
+  margin: -1rem 0.5rem -1rem 0;
+}
+
+.producers__menu__country {
+  border-top: 1px dotted #777;
+  cursor: pointer; cursor: hand;
+  display: inline-block;
+  font-size: 2.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0;
+  padding: 2%;
+}
+
+.producers__menu__country:hover {
+  background-color: #ffe;
+}
+
+.producers__menu__country:active {
+  background-color: #fff;
+}
+
+/*.producers__menu__country:after {
+  content: "";
+  display: inline-block;
+  height:3rem;
+  width: 3rem;
+  margin: -1rem 0 -1rem 0.5rem;
+}*/
+
+.producers__menu__country:before {
+  content: "";
+  display: inline-block;
+  height:3rem;
+  width: 3rem;
+  margin: -1rem 1rem -1.25rem 0;
+}
+
+.producers__menu__country--austria:before {
+  background: url("../img/producers/flag-austria.svg") no-repeat;
+  background-size: 3rem;
+}
+
+.producers__menu__country--france:before {
+  background: url("../img/producers/flag-france.svg") no-repeat;
+  background-size: 3rem;
+}
+
+.producers__menu__country--germany:before {
+  background: url("../img/producers/flag-germany.svg") no-repeat;
+  background-size: 3rem;
+}
+
+.producers__menu__country--italy:before {
+  background: url("../img/producers/flag-italy.svg") no-repeat;
+  background-size: 3rem;
+}
+
+.producers__menu__country--portugal:before {
+  background: url("../img/producers/flag-portugal.svg") no-repeat;
+  background-size: 3rem;
+}
+
+.producers__menu__country--slovenia:before {
+  background: url("../img/producers/flag-slovenia.svg") no-repeat;
+  background-size: 3rem;
+}
+
+.producers__menu__country--spain:before {
+  background: url("../img/producers/flag-spain.svg") no-repeat;
+  background-size: 3rem;
+}
+
+.producers__menu__country--usa:before {
+  background: url("../img/producers/flag-united-states.svg") no-repeat;
+  background-size: 3rem;
+}
+
+.producer__region__list {
+  background-color: #ffe;
+  padding: 2%;
+}
+
+.producers__list {
+  -webkit-column-width:15rem;
+     -moz-column-width:15rem;
+          column-width:15rem;
+  list-style: none;
+}
+
+.producer {
+-webkit-column-break-inside:avoid;
+   -moz-column-break-inside:avoid;
+    -ms-column-break-inside:avoid;
+     -o-column-break-inside:avoid;
+        column-break-inside:avoid;
+}
+
+.producer__card {
+  margin-bottom: 1rem;
+}
+
+.producer__location {
+  display: block;
+  font-size: .75rem;
+  font-style: italic;
+}
+
+.producers__menu__close {
+  cursor: pointer; cursor: hand;
+  color: #222;
+  padding: 5%;
+}
+
+.producers__menu__close:hover {
+  color: tomato;
+}
+
+.producers__menu__close:active {
+  color: #eff;
+}
+
+.producers__menu section:last-of-type {
+  border-bottom: 1px dotted #777;
+}
+
+/* EVENTS */
+.events__list {
+  list-style: none;
+}
+
+.events__list__item {
+  background-color: hsla(0, 0%, 99%, 1);
+  box-shadow: 1px 1px 2px #777;
+  margin: 2rem 0 2rem 0;
+  padding: 2.5rem;
+}
+
+.event__title {
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.event__date {
+  color: hsla(118, 50%, 40%, 1);
+  font-size: 1.65rem;
+  line-height: 1.5;
+}
+
+.event__alert {
+  background-color: hsla(118, 50%, 35%, .85);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 2%;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.event__location {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.event__rsvp {
+  font-size: 1.25rem;
+}
+
+/* ABOUT US */
+.bio__image {
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+.bio__copy {
+  padding-right: 5rem;
+}
+
+.bio--mark {
+  margin-top: 2rem;
+}
+
+/* COLORS */
+.red {
+  color: tomato;
+}
+
+
+/* ICONS */
+.icon--xsmall {
+  font-size: .75rem;
+}
+
+.icon--small {
+  font-size: 1rem;
+}
+
+.icon--medium {
+  font-size: 1.4rem;
+}
+
+.icon--large {
+  font-size: 2rem;
+}
+
+.icon--xlarge {
+  font-size: 3rem;
+}
+
+/* SLABTEXT */
+/* These rules are used specifically for
+   the slabtext.js plugin which enables the
+   Robert Houde Wines logo text to
+   take up the space of its container */
+.slabtexted .slabtext
+        {
+        display:-moz-inline-box;
+        display:inline-block;
+        white-space:nowrap;
+        }
+.slabtextinactive .slabtext
+        {
+        display:inline;
+        white-space:normal;
+        font-size:1rem !important;
+        letter-spacing:inherit !important;
+        word-spacing:inherit !important;
+        *letter-spacing:0 !important;
+        *word-spacing:0 !important;
+        }
+.slabtextdone .slabtext
+        {
+        display:block;
+        }
+
+
+/*// Small screens //*/
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40rem) {
+
+  .row .row,
+  .column,
+  .columns {
+    margin: 0;
+    padding: 0;
+  }
+
+  .row--small--white {
+    background: hsla(0,0%,99%,.25);
+  }
+
+  /* Layout */
+  footer {
+      padding: 1rem;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  .producers__list {
+       -moz-columns:1;
+    -webkit-columns:1;
+            columns:1;
+  }
+
+  .hide--small {
+    display: none;
+  }
+
+  /* Typography */
+  p {
+    font-size: 1rem;
+  }
+
+  .logo__text {
+    margin-top: -0.2rem;
+    font-size: 1.7rem;
+  }
+
+  .title {
+    font-size: 1.65rem;
+    letter-spacing: .2rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: .025rem;
+    width: 100%;
+  }
+
+  .footer__copy {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .025rem
+  }
+
+  /* Producers */
+  .producers__menu__title {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+
+  .producers__menu__title:after, .producers__menu__title:before {
+    content: "";
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .producers__menu__title:after {
+    background: url("../img/producers/flourish-right.svg") no-repeat;
+    background-size: 1.5rem;
+    margin: -1rem 0 -0.5rem 0.5rem;
+  }
+
+  .producers__menu__title:before {
+    background: url("../img/producers/flourish-left.svg") no-repeat;
+    background-size: 1.5rem;
+    margin: -1rem 0.5rem -0.5rem 0;
+  }
+
+  /* EVENTS */
+  .events__list__item {
+    background-color: inherit;
+    border-top: 1px solid hsla(118, 50%, 35%, .85);
+    /*border-bottom: 1px solid hsla(118, 50%, 35%, .85);*/
+    box-shadow: none;
+    margin: 2rem 0 2rem 0;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .event__title {
+    font-size: 1.65rem;
+    font-weight: 200;
+  }
+
+  .event__date {
+    font-size: 1rem;
+  }
+
+  .event__time {
+    display: block;
+  }
+
+  /* ABOUT US */
+  .bio__image {
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+  }
+
+  .bio__title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .bio__copy {
+    padding: 1rem;
+  }
+
+  /* BUTTONS */
+  .button--about-us,
+  .button--contact-us,
+  .button--events,
+  .button--producers {
+    font-size: .75rem;
+    letter-spacing: .125rem;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/*// Medium screens //*/
+@media only screen and (min-width: 40.063rem) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063rem) and (max-width: 64rem) {
+
+  /* Typography */
+  .intro {
+    width: 100%;
+  }
+
+  .producers__menu__title {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/*// Large screens //*/
+@media only screen and (min-width: 64.063rem) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063rem) and (max-width: 90rem) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+/*// XLarge screens //*/
+@media only screen and (min-width: 90.063rem) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063rem) and (max-width: 120rem) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/*// XXLarge screens //*/
+@media only screen and (min-width: 120.063rem) { } /* min-width 1921px, xlarge screens */

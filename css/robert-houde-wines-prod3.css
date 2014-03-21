@@ -1,0 +1,20 @@
+.producer__region__list {
+  background-color: #ffe;
+  padding: 2%;
+  text-align: center;
+}
+
+.producers__list {
+  -webkit-column-count: 1;
+     -moz-column-count: 1;
+          column-count: 1;
+  list-style: none;
+}
+
+.producer {
+-webkit-column-break-inside: none;
+   -moz-column-break-inside: none;
+    -ms-column-break-inside: none;
+     -o-column-break-inside: none;
+        column-break-inside: none;
+}
