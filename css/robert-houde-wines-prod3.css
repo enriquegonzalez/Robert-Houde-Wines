@@ -18,3 +18,7 @@
      -o-column-break-inside: none;
         column-break-inside: none;
 }
+
+.producer__location {
+  display: inline-block;
+}
