@@ -1,6 +1,6 @@
 /* BASE */
 footer {
-    background-color: hsla(0,0%,13%,.85);
+    background-color: hsla(0,0%,13%,.65);
     padding: 3rem;
     margin-bottom: 5rem;
 }
@@ -89,6 +89,7 @@ h6 {
 .section {
   background-color: hsla(0, 0%, 99%, .9);
   padding: 5rem;
+  color: #222;
 }
 
 .section--feature {
@@ -285,10 +286,7 @@ h6 {
 }
 
 .events__list__item {
-  background-color: hsla(0, 0%, 99%, 1);
-  box-shadow: 1px 1px 2px #777;
-  margin: 2rem 0 2rem 0;
-  padding: 2.5rem;
+  margin: 5rem 0 5rem 0;
 }
 
 .event__title {
@@ -334,10 +332,6 @@ h6 {
 
 .bio__copy {
   padding-right: 5rem;
-}
-
-.bio--mark {
-  margin-top: 2rem;
 }
 
 /* COLORS */
