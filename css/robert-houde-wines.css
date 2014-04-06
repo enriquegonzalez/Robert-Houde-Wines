@@ -88,7 +88,7 @@ h6 {
 
 .section {
   background-color: hsla(0, 0%, 99%, .9);
-  padding: 5rem;
+  padding: 3rem;
   color: #222;
 }
 
@@ -100,7 +100,7 @@ h6 {
 
 .title {
   color: inherit;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 200;
   letter-spacing: .25rem;
   line-height: 1.5;
@@ -290,7 +290,7 @@ h6 {
 }
 
 .event__title {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 600;
   font-style: italic;
   line-height: 1.5;
@@ -553,12 +553,22 @@ h6 {
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 /*// Large screens //*/
-@media only screen and (min-width: 64.063rem) { } /* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063rem) {} /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063rem) and (max-width: 90rem) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
 
 /*// XLarge screens //*/
-@media only screen and (min-width: 90.063rem) { } /* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063rem) {
+
+.row {
+  max-width: 75em;
+  }
+
+.contain-to-grid .top-bar {
+    max-width: 75em;
+  }
+
+} /* min-width 1441px, xlarge screens */
 
 @media only screen and (min-width: 90.063rem) and (max-width: 120rem) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 

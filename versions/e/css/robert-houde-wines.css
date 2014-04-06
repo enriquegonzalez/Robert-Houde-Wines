@@ -1,6 +1,6 @@
 /* BASE */
 footer {
-    background-color: hsla(0,0%,13%,.85);
+    background-color: hsla(0,0%,13%,.65);
     padding: 3rem;
     margin-bottom: 5rem;
 }
@@ -71,7 +71,7 @@ h6 {
 
 .logo__text {
   font-size: 2.75rem;
-  margin-top: -0.35rem;
+  margin-top: -1rem;
 }
 
 .intro {
@@ -89,6 +89,7 @@ h6 {
 .section {
   background-color: hsla(0, 0%, 99%, .9);
   padding: 5rem;
+  color: #222;
 }
 
 .section--feature {
@@ -99,7 +100,7 @@ h6 {
 
 .title {
   color: inherit;
-  font-size: 2.65rem;
+  font-size: 2.5rem;
   font-weight: 200;
   letter-spacing: .25rem;
   line-height: 1.5;
@@ -285,10 +286,7 @@ h6 {
 }
 
 .events__list__item {
-  background-color: hsla(0, 0%, 99%, 1);
-  box-shadow: 1px 1px 2px #777;
-  margin: 2rem 0 2rem 0;
-  padding: 2.5rem;
+  margin: 5rem 0 5rem 0;
 }
 
 .event__title {
@@ -334,10 +332,6 @@ h6 {
 
 .bio__copy {
   padding-right: 5rem;
-}
-
-.bio--mark {
-  margin-top: 2rem;
 }
 
 /* COLORS */
@@ -398,7 +392,23 @@ h6 {
 @media only screen { } /* Define mobile styles */
 
 @media only screen and (max-width: 40rem) {
+
+  .row .row,
+  .column,
+  .columns {
+    margin: 0;
+    padding: 0;
+  }
+
+  .row--small--white {
+    background: hsla(0,0%,99%,.25);
+  }
+
   /* Layout */
+  footer {
+      padding: 1rem;
+  }
+
   .section {
     padding: 1rem;
   }
@@ -419,8 +429,13 @@ h6 {
   }
 
   .logo__text {
-    margin-top: -0.2rem;
+    margin-top: -.75rem;
     font-size: 1.7rem;
+  }
+
+  .title {
+    font-size: 1.65rem;
+    letter-spacing: .2rem;
   }
 
   .intro {
@@ -431,9 +446,8 @@ h6 {
   }
 
   .footer__copy {
-    color: #fff;
-    font-size: 1.25rem;
-    font-weight: 200;
+    font-size: 1rem;
+    font-weight: 400;
     letter-spacing: .025rem
   }
 
@@ -465,7 +479,6 @@ h6 {
   .events__list__item {
     background-color: inherit;
     border-top: 1px solid hsla(118, 50%, 35%, .85);
-    /*border-bottom: 1px solid hsla(118, 50%, 35%, .85);*/
     box-shadow: none;
     margin: 2rem 0 2rem 0;
     padding: 1rem 0 1rem 0;
@@ -484,6 +497,14 @@ h6 {
     display: block;
   }
 
+  .event__location {
+    font-size: 1rem;
+  }
+
+  .event__rsvp {
+    font-size: 1rem;
+  }
+
   /* ABOUT US */
   .bio__image {
     margin-bottom: 2rem;
@@ -497,7 +518,7 @@ h6 {
   }
 
   .bio__copy {
-    padding: 1rem;
+    padding: 0;
   }
 
   /* BUTTONS */
@@ -505,6 +526,7 @@ h6 {
   .button--contact-us,
   .button--events,
   .button--producers {
+    font-size: .75rem;
     letter-spacing: .125rem;
     margin-top: 1.5rem;
     text-transform: uppercase;
