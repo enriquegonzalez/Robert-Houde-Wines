@@ -23,15 +23,16 @@ html .producers {
 }
 
 html .events {
-  background: url("../img/backgrounds/bg-vineyard-dsc01860.jpg") no-repeat center center fixed;
+  /*background: url("../img/backgrounds/bg-vineyard-dsc01860.jpg") no-repeat center center fixed;*/
+  background: url("../img/backgrounds/bg-events-yusho-course.jpg") no-repeat center center fixed;
 }
 
 html .about-us {
-  background: url("../img/backgrounds/bg-vineyard-dsc02468.jpg") no-repeat center center fixed;
+  background: url("../img/backgrounds/bg-vineyard-dsc6168.jpg") no-repeat center center fixed;
 }
 
 html .contact-us {
-  background: url("../img/backgrounds/bg-vineyard-dsc6168.jpg") no-repeat center center fixed;
+  background: url("../img/backgrounds/bg-vineyard-dsc02468.jpg") no-repeat center center fixed;
 }
 
 html .home,
@@ -88,7 +89,7 @@ h6 {
 
 .section {
   background-color: hsla(0, 0%, 99%, .9);
-  padding: 3rem;
+  padding: 5rem;
   color: #222;
 }
 
@@ -286,11 +287,11 @@ h6 {
 }
 
 .events__list__item {
-  margin: 5rem 0 5rem 0;
+  margin: 0 0 7rem 0;
 }
 
 .event__title {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   font-weight: 600;
   font-style: italic;
   line-height: 1.5;
@@ -567,6 +568,10 @@ h6 {
 .contain-to-grid .top-bar {
     max-width: 75em;
   }
+
+.title, .event__title {
+  font-size: 3rem;
+}
 
 } /* min-width 1441px, xlarge screens */
 
