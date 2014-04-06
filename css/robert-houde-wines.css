@@ -556,7 +556,13 @@ h6 {
 /*// Large screens //*/
 @media only screen and (min-width: 64.063rem) {} /* min-width 1025px, large screens */
 
-@media only screen and (min-width: 64.063rem) and (max-width: 90rem) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 64.063rem) and (max-width: 90rem) {
+
+.intro {
+  font-size: 1.25rem;
+}
+
+} /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
 
 /*// XLarge screens //*/
 @media only screen and (min-width: 90.063rem) {
