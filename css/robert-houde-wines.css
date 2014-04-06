@@ -5,9 +5,7 @@ footer {
     margin-bottom: 5rem;
 }
 
-p {
-  font-size: 1.25rem;
-}
+
 
 /* BACKGROUNDS */
 html body {
@@ -71,7 +69,7 @@ h6 {
 }
 
 .logo__text {
-  font-size: 2.75rem;
+  font-size: 2.25rem;
   margin-top: -1rem;
 }
 
@@ -559,13 +557,17 @@ h6 {
 @media only screen and (min-width: 64.063rem) and (max-width: 90rem) {
 
 .intro {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
 }
 
 } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
 
 /*// XLarge screens //*/
 @media only screen and (min-width: 90.063rem) {
+
+p {
+  font-size: 1.25rem;
+}
 
 .row {
   max-width: 75em;
@@ -574,6 +576,10 @@ h6 {
 .contain-to-grid .top-bar {
     max-width: 75em;
   }
+
+.logo__text {
+  font-size: 2.75rem;
+}
 
 .title, .event__title {
   font-size: 3rem;
