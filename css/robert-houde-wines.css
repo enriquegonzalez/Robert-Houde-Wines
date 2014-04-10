@@ -5,7 +5,9 @@ footer {
     margin-bottom: 5rem;
 }
 
-
+a {
+  color: #22f;
+}
 
 /* BACKGROUNDS */
 html body {
@@ -30,7 +32,8 @@ html .about-us {
 }
 
 html .contact-us {
-  background: url("../img/backgrounds/bg-vineyard-dsc02468.jpg") no-repeat center center fixed;
+  /*background: url("../img/backgrounds/bg-vineyard-dsc02468.jpg") no-repeat center center fixed;*/
+  background: url("../img/backgrounds/bg-gazebo-at-caggiano-winery-campania-italy.jpg") no-repeat center center fixed;
 }
 
 html .home,
@@ -71,6 +74,10 @@ h6 {
 .logo__text {
   font-size: 2.25rem;
   margin-top: -1rem;
+}
+
+.logo__text--white {
+  color: #fff;
 }
 
 .intro {
@@ -304,7 +311,7 @@ h6 {
 }
 
 .event__alert {
-  background-color: hsla(118, 50%, 35%, .85);
+  background-color: hsla(0, 0%, 13%, 1);
   color: #fff;
   font-size: 1.25rem;
   font-weight: 500;
@@ -327,6 +334,10 @@ h6 {
 .bio__image {
   margin-bottom: 2rem;
   margin-top: 5rem;
+}
+
+.bio__title {
+  font-size: 2.65rem;
 }
 
 .bio__copy {
@@ -582,7 +593,7 @@ p {
 }
 
 .title, .event__title {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 } /* min-width 1441px, xlarge screens */
