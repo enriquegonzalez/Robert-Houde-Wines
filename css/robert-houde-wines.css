@@ -23,7 +23,6 @@ html .producers {
 }
 
 html .events {
-  /*background: url("../img/backgrounds/bg-vineyard-dsc01860.jpg") no-repeat center center fixed;*/
   background: url("../img/backgrounds/bg-events-yusho-course.jpg") no-repeat center center fixed;
 }
 
@@ -32,7 +31,6 @@ html .about-us {
 }
 
 html .contact-us {
-  /*background: url("../img/backgrounds/bg-vineyard-dsc02468.jpg") no-repeat center center fixed;*/
   background: url("../img/backgrounds/bg-gazebo-at-caggiano-winery-campania-italy.jpg") no-repeat center center fixed;
 }
 
@@ -441,6 +439,10 @@ h6 {
   .logo__text {
     margin-top: -.75rem;
     font-size: 1.7rem;
+  }
+
+  .logo__text--white {
+    color: #222;
   }
 
   .title {
