@@ -427,6 +427,10 @@ h6 {
             columns:1;
   }
 
+  .producer__region__list {
+    text-align: center;
+  }
+
   .hide--small {
     display: none;
   }
