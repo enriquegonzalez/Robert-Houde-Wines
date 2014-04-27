@@ -129,6 +129,12 @@ h6 {
   text-transform: uppercase;
 }
 
+.button--events,
+.button--contact-us {
+  position: absolute;
+  bottom: 0;
+}
+
 
 /* PRODUCERS */
 .producers__menu__title {
@@ -421,6 +427,11 @@ h6 {
     padding: 1rem;
   }
 
+  .button--events,
+  .button--contact-us {
+    position: static;
+  }
+
   .producers__list {
        -moz-columns:1;
     -webkit-columns:1;
@@ -555,6 +566,11 @@ h6 {
 @media only screen and (min-width: 40.063rem) { } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063rem) and (max-width: 64rem) {
+
+  .button--events,
+  .button--contact-us {
+    position: static;
+  }
 
   /* Typography */
   .intro {
