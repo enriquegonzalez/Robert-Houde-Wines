@@ -149,13 +149,13 @@ h6 {
 }
 
 .producers__menu__title:after {
-  background: url("../img/producers/flourish-right.svg") no-repeat;
+  background: url("../img/flourish/flourish-right.svg") no-repeat;
   background-size: 3rem;
   margin: -1rem 0 -1rem 0.5rem;
 }
 
 .producers__menu__title:before {
-  background: url("../img/producers/flourish-left.svg") no-repeat;
+  background: url("../img/flourish/flourish-left.svg") no-repeat;
   background-size: 3rem;
   margin: -1rem 0.5rem -1rem 0;
 }
