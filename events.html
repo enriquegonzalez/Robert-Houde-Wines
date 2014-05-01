@@ -54,7 +54,7 @@
       <ul class="right">
         <li class="navigation__menu__item"><a href="index.html">Home</a></li>
         <li class="navigation__menu__item"><a href="producers.html">Producers</a></li>
-        <!-- <li class="navigation__menu__item"><a href="new-arrivals.html">New Arrivals</a></li> -->
+        <!-- <li class="navigation__menu__item"><a href="/new-arrivals/">New Arrivals</a></li> -->
         <li class="navigation__menu__item active"><a href="#">Events</a></li>
         <li class="navigation__menu__item"><a href="about-us.html">About Us</a></li>
         <li class="navigation__menu__item"><a href="contact-us.html">Contact Us</a></li>
@@ -71,95 +71,46 @@
     </header>
   </section>
     <section class="section">
-      <ul class="events__list">
-
-       <!--  <li class="events__list__item">
-          <section>
-            <header>
-              <h1 class="event__title">
-                Late Night Tasting with Stephane Tissot
-              </h1>
-              <p class="event__date">Saturday, April 12, 2014, <span class="event__time">11:00 p.m.&mdash;1:00 a.m.</span></p>
-            </header>
-              <div class="row">
-              <div class="large-4 columns">
-                <img class="event__image " src="img/events/stephane-tissot.jpg" alt="Stephane Tissot" />
-              </div>
-              <div class="large-8 columns">
-                <p class="event__description">
-                  Stephane Tissot is a <em>biodynamic</em> star in the Jura, creating world-class sparkling wines, Chardonnay that ages for decades, Vin Jaune, Red Wines and even Macvin. Join us in tasting current vintages along with special older bottles Stephane is bringing with him!
-                </p>
-                <p class="event__location">
-                Vera Restaurant<br />
-                1023 W Lake St, Chicago, IL 60607
-                </p>
-                <p><span class="event__alert"><i class="fi-torso-business"></i> Trade only</span></p>
-                <p class="event__rsvp">
-                  RSVP to <a href="mailto:events@roberthoudewines.com">events@roberthoudewines.com</a><br /> or (917) 428-0230.
-                </p>
-              </div>
-            </div>
-          </section>
-        </li> -->
-
-        <!-- <li class="events__list__item">
-          <section>
-            <header>
-              <h1 class="event__title">
-                Passion Jura Chicago-Annual Grand Tasting
-              </h1>
-              <p class="event__date">Monday, April 14, 2014,  <span class="event__time">2:00&mdash;5:00 p.m.</span></p>
-            </header>
-            <div class="row">
-              <div class="large-4 columns">
-                <img class="event__image " src="img/events/jura-tasting.jpg" alt="Jura vineyard" />
-              </div>
-              <div class="large-8 columns">
-                <p class="event__description">
-                  What many referred to as one of the best tastings of the year is back with an even larger contingent of over 20 Jura producers.
-                </p>
-                <p class="event__location">
-                  Chicago Artists Coalition<br />
-                  217 N Carpenter St, Chicago, IL 60607
-                </p>
-                <p class="event__rsvp">
-                  <a href="http://www.eventbrite.ca/e/passion-jura-chicago-annual-grand-tasting-april-14th-2014-tickets-10689357155" rel="external">
-                    <button class="button radius button--contact-us">RSVP via Eventbrite</button>
-                  </a>
-                </p>
-              </div>
-            </div>
-          </section>
-        </li> -->
-
-        <li class="events__list__item">
-          <section>
-            <header>
-              <h1 class="event__title">
-                Craft Beer and Sparkling Wine Tasting
-              </h1>
-              <p class="event__date">Monday, May 5, 2014, <span class="event__time">12:00&mdash;3:00 p.m.</span></p>
-            </header>
-           <div class="row">
-              <div class="large-4 columns">
-                <img class="event__image " src="img/events/sparkling-wine.jpg" alt="Sparkling wine" />
-              </div>
-              <div class="large-8 columns">
-                <p class="event__description">
-                  Taste sparkling wines from Champagne, Jura, Burgundy, Spain, Italy and Slovenia along with great craft beers from Windy City Distributing.
-                </p>
-                <p class="event__location">
-                  POPS for Champagne<br />
-                  601 N State St, Chicago, IL 60611
-                </p>
-                <p><span class="event__alert"><i class="fi-torso-business"></i> Trade only</span></p>
-                <p class="event__rsvp">
-                   RSVP to <a href="mailto:events@roberthoudewines.com">events@roberthoudewines.com</a>
-                </p>
-              </div>
-            </div>
-          </section>
-        </li>
+      <ul class="events__list" id="eventsList">
+        <script id="eventsHandleBars" type="text/x-handlebars-template">
+          {{#each Events}}
+            <li class="events__list__item">
+              <section>
+                <header>
+                  <h1 class="event__title">
+                    {{ title }}
+                  </h1>
+                  <p class="event__date">
+                    {{weekDay}}, {{month}} {{day}}, {{year}},
+                    <span class="event__time">{{startTime}}&mdash;{{endTime}}</span>
+                  </p>
+                </header>
+               <div class="row">
+                  <div class="large-4 columns">
+                    <img class="event__image" src="img/events/{{{imgFileName}}}" alt="{{{imgDescription}}}" />
+                  </div>
+                  <div class="large-8 columns">
+                    <p class="event__description">
+                      {{description}}
+                    </p>
+                    <p class="event__location">
+                      {{locationName}}<br />
+                      {{address}}, {{city}}, {{state}} {{zip}}
+                    </p>
+                    {{#if tradeOnly}}
+                      <p><span class="event__alert"><i class="fi-torso-business"></i> Trade only</span></p>
+                    {{/if}}
+                    <p class="event__rsvp">
+                      <a href="{{{rsvpLink}}}" rel="external">
+                        <button class="button radius button">RSVP</button>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </li>
+          {{/each}}
+        </script>
       </ul>
     </section>
   </section>
@@ -177,9 +128,12 @@
 </div>
 </div>
 
+
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
   <script src="js/vendor/jquery.slabtext.min.js"></script>
+  <script type="text/javascript" src="js/vendor/handlebars-v1.3.0.js"></script>
+  <script src="js/content/rhw-events.js"></script>
   <script src="js/robert-houde-wines.js"></script>
   <script>
     $(document).foundation();

@@ -1,7 +1,11 @@
-{Events:[
+$(function  () {
+    var source   = $("#eventsHandleBars").html(),
+        template = Handlebars.compile(source),
+        data = {Events:[
 
-{
-title:"Craft Beer And Sparkling Wine Tasting",
+// DO NOT MODIFY ABOVE
+
+{title:"Craft Beer And Sparkling Wine Tasting",
 weekDay:"Monday",
 month:"May",
 day:"5",
@@ -22,7 +26,17 @@ zip:"60611",
 
 rsvpLink:"mailto:events@roberthoudewines.com",
 
-tradeOnly:"yes"
-}
+tradeOnly:"yes"}
 
-]};
+// DO NOT MODIFY BELOW
+
+  ]};
+
+  $("#eventsList").append (template(data));
+
+});
+
+
+
+
+
