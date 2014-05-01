@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Robert Houde Wines: Contact Us</title>
+  <title>Robert Houde Wines: Events</title>
   <meta name="description" content="We are an Illinois-based independent importer and distributor of the finest artisanal wines.">
 
   <meta property="og:title" content="Robert Houde Wines" />
@@ -30,19 +30,20 @@
     ga('send', 'pageview');
   </script>
 </head>
+<body class="events slabtexted">
 
-<body class="contact-us slabtexted">
-<div class="row">
-<div class="small-10 small-centered medium-6 medium-centered large-4  large-centered columns">
+<div class="row row--small--white">
+<div class="small-10 small-centered medium-6 medium-centered large-4 large-centered columns">
   <header class="company__logo">
     <img src="img/rhw-website-logo-color.svg" alt="Robert Houde Wines" class="logo hide-for-print"/>
-    <h1 class="slabtextdone logo__text"><span class="slabtext">Robert Houde Wines</span></h1>
+    <h1 class="slabtextdone logo__text logo__text--white"><span class="slabtext">Robert Houde Wines</span></h1>
   </header>
 </div>
 </div>
 
 <div class="row">
 <div class="large-12 large-centered columns">
+
   <div class="contain-to-grid">
     <nav class="top-bar" data-topbar>
       <ul class="title-area">
@@ -53,63 +54,69 @@
       <ul class="right">
         <li class="navigation__menu__item"><a href="index.html">Home</a></li>
         <li class="navigation__menu__item"><a href="producers.html">Producers</a></li>
-        <!-- <li class="navigation__menu__item"><a href="new-arrivals.html">New Arrivals</a></li> -->
-        <li class="navigation__menu__item"><a href="events.html">Events</a></li>
+        <!-- <li class="navigation__menu__item"><a href="/new-arrivals/">New Arrivals</a></li> -->
+        <li class="navigation__menu__item active"><a href="#">Events</a></li>
         <li class="navigation__menu__item"><a href="about-us.html">About Us</a></li>
-        <li class="navigation__menu__item active"><a href="#">Contact Us</a></li>
+        <li class="navigation__menu__item"><a href="contact-us.html">Contact Us</a></li>
       </ul>
       </section>
     </nav>
   </div>
 
 <main>
-  <section class="section">
-    <div class="row">
-    <div class="large-6 columns">
-      <header>
-        <h1 class="title">
-          Contact Us
-        </h1>
-      </header>
-      <p class="intro intro--contact-us">
-        Robert Houde Wines is a licensed importer and distributor in the state of Illinois. We sell exclusively to licensed resellers, retailers and restaurateurs. Please contact us for trade inquiries only. Thank you for your interest!
-      </p>
-      <p><em>We are prohibited by law from selling directly to consumers</em>.</p>
-      </div>
-
-      <div class="large-6 columns">
-      <p class="vcard">
-        <span class="email"><a href="mailto:info@roberthoudewines.com">info@roberthoudewines.com</a></span><br />
-        <a class="fn org url" href="http://roberthoudewines.com" title="Contact Information for Robert Houde Wines, LLC">
-          <span class="organization-name">Robert Houde Wines, LLC.</span>
-        </a><br />
-
-        <span class="adr">
-          <span class="street-address">PO Box 101039</span><br />
-          <span class="locality">Chicago</span>,
-          <span class="state">Illinois</span>
-          <span class="zip">60610-1039</span>
-        </span><br />
-
-        <span class="tel">
-          Tel: <span class="value">+1 (800) 807-6610</span>
-        </span><br />
-
-        <span class="tel">
-          <span class="type">Fax</span>:
-          <span class="value">+1 (847) 939-1400</span>
-        </span><br />
-
-        <a rel="me" class="url" href="https://www.facebook.com/RobertHoudeWines">
-          <i class="fi-social-facebook icon-size-medium"></i> Like us on Facebook
-        </a>
-      </p>
-    </div>
-    </div>
+  <section class="section section--feature">
+    <header>
+      <h1 class="title">Events</h1>
+      <p class="intro">We provide educational events to introduce and promote exciting properties to top restaurants and wine shops in Chicagoland and Central Illinois, please join us!</p>
+    </header>
+  </section>
+    <section class="section">
+      <ul class="events__list" id="eventsList">
+        <script id="eventsHandleBars" type="text/x-handlebars-template">
+          {{#each Events}}
+            <li class="events__list__item">
+              <section>
+                <header>
+                  <h1 class="event__title">
+                    {{ title }}
+                  </h1>
+                  <p class="event__date">
+                    {{weekDay}}, {{month}} {{day}}, {{year}},
+                    <span class="event__time">{{startTime}}&mdash;{{endTime}}</span>
+                  </p>
+                </header>
+               <div class="row">
+                  <div class="large-4 columns">
+                    <img class="event__image" src="img/events/{{{imgFileName}}}" alt="{{{imgDescription}}}" />
+                  </div>
+                  <div class="large-8 columns">
+                    <p class="event__description">
+                      {{description}}
+                    </p>
+                    <p class="event__location">
+                      {{locationName}}<br />
+                      {{address}}, {{city}}, {{state}} {{zip}}
+                    </p>
+                    {{#if tradeOnly}}
+                      <p><span class="event__alert"><i class="fi-torso-business"></i> Trade only</span></p>
+                    {{/if}}
+                    <p class="event__rsvp">
+                      <a href="{{{rsvpLink}}}" rel="external">
+                        <button class="button radius button">RSVP</button>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </li>
+          {{/each}}
+        </script>
+      </ul>
+    </section>
   </section>
 </main>
 
-<footer class="page__footer__background">
+<footer>
   <p class="footer__copy">
     <small>
       <span class="copyright">&copy; Copyright 2013,</span>
@@ -118,15 +125,15 @@
   </p>
 </footer>
 
-  </div>
-  </div>
-  <!-- Page Content Ends -->
-
+</div>
+</div>
 
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
   <script src="js/vendor/jquery.slabtext.min.js"></script>
+  <script type="text/javascript" src="js/vendor/handlebars-v1.3.0.js"></script>
+  <script src="js/rhw-events.js"></script>
   <script src="js/robert-houde-wines.js"></script>
   <script>
     $(document).foundation();
