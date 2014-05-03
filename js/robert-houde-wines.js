@@ -13,12 +13,12 @@
 
 // PRODUCERS
 // Producer Menus
-$('h1[id^=Producers]').click( function() {
+$('#producersList').on('click', 'h1[id^=Producers]', function() {
   $(this).siblings('div[id$=RegionList]').slideToggle();
 });
 
   // Menu Closer
-  $('i[id$=RegionListClose]').click( function() {
+  $('#producersList').on('click','i[id$=RegionListClose]', function() {
     $(this).parents('div[id$=RegionList]').slideUp();
   });
 

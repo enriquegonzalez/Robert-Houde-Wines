@@ -22,6 +22,10 @@ html .producers {
   background: url("../img/backgrounds/bg-vineyard-dsc01808.jpg") no-repeat center center fixed;
 }
 
+html .new-arrivals {
+  background: url("../img/backgrounds/bg-new-arrivals-buds-break-in-txakoli.jpg") no-repeat center center fixed;
+}
+
 html .events {
   background: url("../img/backgrounds/bg-events-yusho-course.jpg") no-repeat center center fixed;
 }
@@ -36,6 +40,7 @@ html .contact-us {
 
 html .home,
 html .producers,
+html .new-arrivals,
 html .events,
 html .about-us,
 html .contact-us {
@@ -120,10 +125,7 @@ h6 {
 }
 
 /*  HOME  */
-.button--about-us,
-.button--contact-us,
-.button--events,
-.button--producers {
+.button {
   letter-spacing: .125rem;
   margin-top: 1.5rem;
   text-transform: uppercase;
@@ -288,6 +290,25 @@ h6 {
 
 .producers__menu section:last-of-type {
   border-bottom: 1px dotted #777;
+}
+
+/* NEW ARRIVALS*/
+
+.post__header {
+
+}
+
+.post__meta {
+
+}
+
+.post__title {
+  color: hsla(118,50%,35%,1);
+  text-transform: uppercase;
+}
+
+.post__author {
+  te
 }
 
 /* EVENTS */
