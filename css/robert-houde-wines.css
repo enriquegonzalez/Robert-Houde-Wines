@@ -9,6 +9,7 @@ a {
   color: #22f;
 }
 
+
 /* BACKGROUNDS */
 html body {
   background: #fff;
@@ -51,12 +52,12 @@ html .contact-us {
 }
 
 /* Typography */
-@font-face {
+/*@font-face {
   font-family: "ITC Garamond Standard Light";
   src: url("fonts/ITCGaramondStd-Lt.otf");
   font-weight: normal;
   font-style: normal;
-}
+}*/
 
 h1,
 h2,
@@ -294,22 +295,36 @@ h6 {
 
 /* NEW ARRIVALS*/
 
-.post__header {
-
-}
-
-.post__meta {
-
+.post {
+  margin: 0 0 2rem 0;
 }
 
 .post__title {
   color: hsla(118,50%,35%,1);
-  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 0;
+  text-transform: capitalize;
 }
 
 .post__author {
   font-style: italic;
 }
+
+.share-this {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-top: 5rem;
+  text-transform: uppercase;
+}
+
+.older-posts {
+  color: hsla(118,50%,35%,1);
+} /* Ghost Class*/
+
 
 /* EVENTS */
 .events__list {
@@ -523,6 +538,20 @@ h6 {
     margin: -1rem 0.5rem -0.5rem 0;
   }
 
+  /* NEW ARRIVALS */
+  .post__title {
+    font-size: 2rem;
+  }
+
+  .button--read-more {
+    width: 100%;
+  }
+
+  .button--share {
+    display: block;
+    width: 100%;
+  }
+
   /* EVENTS */
   .events__list__item {
     background-color: inherit;
@@ -551,6 +580,10 @@ h6 {
 
   .event__rsvp {
     font-size: 1rem;
+  }
+
+  .button--rsvp {
+    width: 100%;
   }
 
   /* ABOUT US */
