@@ -16,27 +16,27 @@ html body {
 }
 
 html .home {
-  background: url("../img/backgrounds/bg-vineyard-espectacle-montsant-spain.jpg") no-repeat center center fixed;
+  background: url("../img/backgrounds/bg-home.jpg") no-repeat center center fixed;
 }
 
 html .producers {
-  background: url("../img/backgrounds/bg-vineyard-dsc01808.jpg") no-repeat center center fixed;
+  background: url("../img/backgrounds/bg-producers.jpg") no-repeat center center fixed;
 }
 
 html .new-arrivals {
-  background: url("../img/backgrounds/bg-new-arrivals-buds-break-in-txakoli.jpg") no-repeat center center fixed;
+  background: url("../img/backgrounds/bg-new-arrivals.jpg") no-repeat center center fixed;
 }
 
 html .events {
-  background: url("../img/backgrounds/bg-events-yusho-course.jpg") no-repeat center center fixed;
+  background: url("../img/backgrounds/bg-events.jpg") no-repeat center center fixed;
 }
 
 html .about-us {
-  background: url("../img/backgrounds/bg-vineyard-dsc6168.jpg") no-repeat center center fixed;
+  background: url("../img/backgrounds/bg-about-us.jpg") no-repeat center center fixed;
 }
 
 html .contact-us {
-  background: url("../img/backgrounds/bg-gazebo-at-caggiano-winery-campania-italy.jpg") no-repeat center center fixed;
+  background: url("../img/backgrounds/bg-contact-us.jpg") no-repeat center center fixed;
 }
 
 html .home,
